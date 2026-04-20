@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
+
+html {
+    margin-top: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 76%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-right: 200px;
+}
+
+.nav-link {
+    width: 43px;
+    height: 14px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #33323D;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #5FB4A2;
+}
+
+.nav-link-kok {
+    width: 43px;
+    height: 14px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #5FB4A2;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-link-kok:hover {
+    color: #33323D;
+}
+
+.logo {
+    width: 60.081634521484375px;
+    height: 32px;
+}
+
+.malumot {
+    width: 100%;
+    background-image: url("./images/header-img.jpg");
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.hero-content {
+    width: 450px;
+    height: 400px;
+    background-color: white;
+}
+
+
+.tarjimayihol {
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.malumot-text {
+    width: 390px;
+    height: 200px;
+    font-family: "Ibarra Real Nova", serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #33323D;
+
+}
+
+
+.nav-btn {
+    width: 200px;
+    height: 48px;
+    background: #203A4C;
+    border: 2px solid #203A4C;
+    margin-left: 10px;
+}
+
+.btn-title {
+    width: 152px;
+    height: 14px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+main {
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.odam-img {
+    width: 540px;
+    height: 600px;
+
+}
+
+.about-title {
+    width: 350px;
+    height: 42px;
+    font-family: "Ibarra Real Nova", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    color: #33323D;
+    margin-top: 50px;
+}
+
+.about-text {
+    width: 350px;
+    height: 360px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323D;
+    margin-top: 40px;
+}
+
+.about-yozuvlar {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.about-btn {
+    width: 202px;
+    height: 48px;
+    margin-left: 850px;
+}
+
+.btn-title2 {
+    width: 134px;
+    height: 14px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #33323D;
+    margin-left: 30px;
+}
+
+section {
+    margin-top: 150px;
+}
+
+.contact-title {
+    width: 350px;
+    height: 84px;
+    font-family: "Ibarra Real Nova", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    color: #33323D;
+    margin-left: 210px;
+}
+
+.contact-btn {
+    width: 162px;
+    height: 48px;
+    border: 2px solid gray;
+    margin-left: 1000px;
+}
+
+footer {
+    display: flex;
+    gap: 200px;
+    width: 1440px;
+    height: 80px;
+    background: #33323D;
+    margin-left: 40px;
+    align-items: center;
+}
+
+
+.logo-oq {
+    width: 61px;
+    height: 32px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+.footer-list {
+    display: flex;
+    gap: 30px;
+}
+
+
+.fa-brands {
+    color: white;
+}
+
+
+.footer-link {
+    width: 43px;
+    height: 14px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.footer-link:hover {
+    color: black;
+    margin-top: -10px;
+}
+
+
+/* @media only screen and (max-width: 768px) {
+
+    .logo {
+        width: 60px;
+        height: 32px;
+        margin-left: -200px;
+    }
+
+    .nav-list {
+        margin-left: 300px;
+    }
+
+    .nav-link {
+        width: 43px;
+        height: 14px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .malumot {
+        width: 688px;
+        height: 600px;
+        background-size: cover;
+    }
+
+    .odam-img {
+        width: 281px;
+        height: 600;
+        margin-left: -100px;
+    }
+
+    .about-me {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-yozuvlar {
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .about-btn {
+        margin-left: 250px;
+    }
+
+    .contact-title {
+        margin-left: 100px;
+    }
+
+    .contact-btn {
+        margin-left:550px;
+        margin-top: -500px;
+    }
+
+    footer{
+        width: 768px;
+        height: 80px;
+        margin-left: 10px;
+    }
+
+    .logo-oq{
+        margin-left: -180px;
+        margin-top: -5px;
+    }
+
+    .footer-list{
+        margin-left: -100px;
+    }
+
+    .ilovalar{
+        
+    }
+
+} */
+
+
+@media only screen and (max-width: 430px){
+    
+    .logo{
+        margin-left: -200px;
+    }
+
+    .nav-link{
+        display: none;
+    }
+
+    .nav-link-kok{
+        display: none;
+    }
+
+    .malumot{
+        margin-left: -40px;
+        width: 411px;
+        height: 771px;
+        background: center;
+        background-image: url(./images/header-img.jpg);
+        margin-top: 30px;
+    }
+
+    .malumot-text{
+        width: 311px;
+        height: 168px;
+        font-weight: 700;
+        font-size: 40px;
+        margin-left: 80px;
+        margin-top: 40px;
+    }
+
+    .nav-btn{
+        margin-left: 80px;
+    }
+
+    .odam-img{
+        width: 311px;
+        height: 346px;
+        margin-left: -140px;
+    }
+
+    .about-yozuvlar{
+        margin-left: -150px;
+    }
+
+    .about-btn{
+        margin-left: -150px;
+        margin-top: 30px;
+    }
+
+    .contact-title{
+        width: 311px;
+        height: 126px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        margin-left: 80px;
+    }
+
+    .contact-btn{
+        margin-left: 130px;
+        margin-top: 30px;
+    }
+
+    footer{
+        width: 375px;
+        height: 354px;
+        margin-left: 30px;
+    }
+
+    .logo-oq{
+        margin-top: -250px;
+        margin-left: -50px;
+    }
+
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        margin-left: -250px;
+    }
+
+    .footer-link{
+        width: 95px;
+        height: 14px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+    }
+
+    .ilovalar{
+        width: 104px;
+        height: 24px;
+        margin-left: -290px;
+        margin-top: 200px;
+    }
+
+}
