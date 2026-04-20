@@ -322,21 +322,21 @@ footer {
 } */
 
 
-@media only screen and (max-width: 430px){
-    
-    .logo{
+@media only screen and (max-width: 430px) {
+
+    .logo {
         margin-left: -200px;
     }
 
-    .nav-link{
+    .nav-link {
         display: none;
     }
 
-    .nav-link-kok{
+    .nav-link-kok {
         display: none;
     }
 
-    .malumot{
+    .malumot {
         margin-left: -40px;
         width: 411px;
         height: 771px;
@@ -345,7 +345,7 @@ footer {
         margin-top: 30px;
     }
 
-    .malumot-text{
+    .malumot-text {
         width: 311px;
         height: 168px;
         font-weight: 700;
@@ -354,26 +354,26 @@ footer {
         margin-top: 40px;
     }
 
-    .nav-btn{
+    .nav-btn {
         margin-left: 80px;
     }
 
-    .odam-img{
+    .odam-img {
         width: 311px;
         height: 346px;
         margin-left: -140px;
     }
 
-    .about-yozuvlar{
+    .about-yozuvlar {
         margin-left: -150px;
     }
 
-    .about-btn{
+    .about-btn {
         margin-left: -150px;
         margin-top: 30px;
     }
 
-    .contact-title{
+    .contact-title {
         width: 311px;
         height: 126px;
         font-weight: 700;
@@ -382,29 +382,29 @@ footer {
         margin-left: 80px;
     }
 
-    .contact-btn{
+    .contact-btn {
         margin-left: 130px;
         margin-top: 30px;
     }
 
-    footer{
+    footer {
         width: 375px;
         height: 354px;
         margin-left: 30px;
     }
 
-    .logo-oq{
+    .logo-oq {
         margin-top: -250px;
         margin-left: -50px;
     }
 
-    .footer-list{
+    .footer-list {
         display: flex;
         flex-direction: column;
         margin-left: -250px;
     }
 
-    .footer-link{
+    .footer-link {
         width: 95px;
         height: 14px;
         font-weight: 400;
@@ -412,11 +412,105 @@ footer {
         line-height: 100%;
     }
 
-    .ilovalar{
+    .ilovalar {
         width: 104px;
         height: 24px;
         margin-left: -290px;
         margin-top: 200px;
     }
 
+    /* скрываем чекбокс */
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    /* стилизуем кнопку */
+    .menu__btn {
+        display: flex;
+        /* используем flex для центрирования содержимого */
+        align-items: center;
+        /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    /* добавляем "гамбургер" */
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        transition: 0.3s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        transition: 0.3s;
+    }
+
+    /* элементы меню */
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        left: 0;
+    }
 }
